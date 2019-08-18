@@ -1,0 +1,215 @@
+<ion-header  mode="ios">
+  <ion-toolbar class="top-bg-color header-color"> 
+    <ion-buttons slot="start" > 
+        <ion-menu-button color="light"></ion-menu-button>
+    </ion-buttons>
+    <ion-title color="light">Bookings</ion-title>
+    <ion-buttons slot="end" color="light">
+                <a href="/notifications" style="color:white">
+                  <ion-icon name="notifications"  size="large" ></ion-icon>
+                  </a>
+            </ion-buttons>
+  </ion-toolbar> 
+</ion-header>
+
+<ion-content  no-padding> 
+        <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+                <ion-fab-button class="top-bg-color" routerLink="/bookings" routerDirection="forward">
+                        <ion-icon name="add"></ion-icon>
+                </ion-fab-button>
+        </ion-fab>
+        <ion-grid>
+                <ion-row>
+                        <ion-col size="12">
+                                <ion-list no-margin>
+                                        <ion-card mode="md" routerLink="/workout-detail" routerDirection="forward">
+                                                <!-- [routerLink]="['/', 'tabs', 'players', 'show-player', player.id]" -->
+                                                <ion-card-content>
+                                                        <ion-item lines="none" no-padding detail>
+                                                                <ion-thumbnail slot="start">
+                                                                        <img src="../../assets/img/dashboard.fw.png">
+                                                                </ion-thumbnail>
+                                                                <ion-row>
+                                                                        <ion-col size="12">
+                                                                                <ion-label > 
+                                                                                        <ion-text>
+                                                                                         <ion-badge class="ion-float-right" color="primary">In Progress</ion-badge>
+                                                                                        <h2  class="ion-float-left"> 
+                                                                                            Title Of Booking&nbsp; 
+                                                                                        </h2>
+                                                                                        
+                                                                                        </ion-text>
+                                                                                </ion-label>
+                                                                        </ion-col>
+                                                                        <ion-col size="12">
+                                                                                <p class="p-color">
+                                                                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                                                                </p>
+                                                                        </ion-col>
+                                                                </ion-row>
+                                                                
+                                                        </ion-item>
+                                                </ion-card-content>
+                                        </ion-card>
+                                        <ion-card  mode="md" routerLink="/workout-detail" routerDirection="forward">
+                                                        <!-- [routerLink]="['/', 'tabs', 'players', 'show-player', player.id]" -->
+                                                        <ion-card-content>
+                                                                <ion-item lines="none" no-padding detail>
+                                                                        <ion-thumbnail slot="start">
+                                                                                <img src="../../assets/img/dashboard.fw.png">
+                                                                        </ion-thumbnail>
+                                                                        <ion-row>
+                                                                                <ion-col size="12">
+                                                                                        <ion-label > 
+                                                                                                <ion-text>
+                                                                                                <h2>
+                                                                                                <span class="ion-float-right">
+                                                                                                                <ion-badge color="primary">In Progress</ion-badge>
+                                                                                                        </span>
+                                                                                                <span class="ion-float-left">Title Of Booking</span> &nbsp; 
+                                                                                                
+                                                                                                </h2>
+                                                                                                </ion-text>
+                                                                                        </ion-label>
+                                                                                </ion-col>
+                                                                                <ion-col size="12">
+                                                                                        <p class="p-color">
+                                                                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                                                                        </p>
+                                                                                </ion-col>
+                                                                        </ion-row>
+                                                                        
+                                                                </ion-item>
+                                                        </ion-card-content>
+                                        </ion-card>
+                                        <ion-card mode="md" routerLink="/workout-detail" routerDirection="forward">
+                                                <!-- [routerLink]="['/', 'tabs', 'players', 'show-player', player.id]" -->
+                                                <ion-card-content>
+                                                        <ion-item lines="none" no-padding detail>
+                                                                <ion-thumbnail slot="start">
+                                                                        <img src="../../assets/img/dashboard.fw.png">
+                                                                </ion-thumbnail>
+                                                                <ion-row>
+                                                                        <ion-col size="12">
+                                                                                <ion-label > 
+                                                                                        <ion-text>
+                                                                                        <h2>
+                                                                                        <span class="ion-float-right">
+                                                                                                        <ion-badge color="success">Completed</ion-badge>
+                                                                                        </span>
+                                                                                        <span class="ion-float-left">Title Of Booking</span> &nbsp; 
+                                                                                        
+                                                                                        </h2>
+                                                                                        </ion-text>
+                                                                                </ion-label>
+                                                                        </ion-col>
+                                                                        <ion-col size="12">
+                                                                                <p class="p-color">
+                                                                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                                                                </p>
+                                                                        </ion-col>
+                                                                </ion-row>
+                                                                
+                                                        </ion-item>
+                                                </ion-card-content>
+                                        </ion-card>
+                                        <ion-card mode="md" routerLink="/workout-detail" routerDirection="forward">
+                                                <!-- [routerLink]="['/', 'tabs', 'players', 'show-player', player.id]" -->
+                                                <ion-card-content>
+                                                        <ion-item lines="none" no-padding detail>
+                                                                <ion-thumbnail slot="start">
+                                                                        <img src="../../assets/img/dashboard.fw.png">
+                                                                </ion-thumbnail>
+                                                                <ion-row>
+                                                                        <ion-col size="12">
+                                                                                <ion-label > 
+                                                                                        <ion-text>
+                                                                                        <h2>
+                                                                                        <span class="ion-float-right">
+                                                                                                        <ion-badge color="danger">Rejected</ion-badge>
+                                                                                        </span>
+                                                                                        <span class="ion-float-left">Title Of Booking</span> &nbsp; 
+                                                                                        
+                                                                                        </h2>
+                                                                                        </ion-text>
+                                                                                </ion-label>
+                                                                        </ion-col>
+                                                                        <ion-col size="12">
+                                                                                <p class="p-color">
+                                                                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                                                                </p>
+                                                                        </ion-col>
+                                                                </ion-row>
+                                                                
+                                                        </ion-item>
+                                                </ion-card-content>
+                                        </ion-card>
+                                        <ion-card mode="md" routerLink="/workout-detail" routerDirection="forward">
+                                                <!-- [routerLink]="['/', 'tabs', 'players', 'show-player', player.id]" -->
+                                                <ion-card-content>
+                                                        <ion-item lines="none" no-padding detail>
+                                                                <ion-thumbnail slot="start">
+                                                                        <img src="../../assets/img/dashboard.fw.png">
+                                                                </ion-thumbnail>
+                                                                <ion-row>
+                                                                        <ion-col size="12">
+                                                                                <ion-label > 
+                                                                                        <ion-text>
+                                                                                        <h2>
+                                                                                        <span class="ion-float-right">
+                                                                                                        <ion-badge color="success">Completed</ion-badge>
+                                                                                        </span>
+                                                                                        <span class="ion-float-left">Title Of Booking  &nbsp;&nbsp;</span> &nbsp; 
+                                                                                        
+                                                                                        </h2>
+                                                                                        </ion-text>
+                                                                                </ion-label>
+                                                                        </ion-col>
+                                                                        <ion-col size="12">
+                                                                                <p class="p-color">
+                                                                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                                                                </p>
+                                                                        </ion-col>
+                                                                </ion-row>
+                                                                
+                                                        </ion-item>
+                                                </ion-card-content>
+                                        </ion-card>
+                                </ion-list>
+                        </ion-col>
+                </ion-row>
+        </ion-grid>
+</ion-content>
+<ion-footer>
+                <ion-toolbar class="tbar-color">
+                        <ion-tabs> 
+                                <ion-tab-bar slot="bottom">
+                                <ion-tab-button href="dashboard" color="medium">
+                                        <ion-label color="medium" class="p-style">Home</ion-label>
+                                        <ion-icon name="home" size="large" color="medium"></ion-icon>
+                                </ion-tab-button>
+                               
+                                <ion-tab-button  href="profile" color="medium"  color="medium">
+                                <ion-label color="medium" class="p-style">Profile</ion-label>
+                                <ion-icon name="person" size="large" color="medium"></ion-icon>
+                                </ion-tab-button>
+                                <ion-tab-button href="workouts" color="primary">
+                                  <ion-label color="primary" class="p-style">Booking</ion-label>
+                                  <ion-icon name="aperture" size="large" color="primary"></ion-icon>
+                                  
+                                </ion-tab-button>
+                                <ion-tab-button  href="services" color="medium"  color="medium">
+                                                <ion-label color="medium" class="p-style">Services</ion-label>
+                                                <ion-icon name="apps" size="large" color="medium"></ion-icon>
+                                 </ion-tab-button>
+                                <ion-tab-button href="schedules" color="medium">
+                                        <ion-label color="medium" class="p-style">Promotions</ion-label>
+                                        <ion-icon name="person-add" size="large" color="medium"></ion-icon>
+                                </ion-tab-button>
+                                
+                                </ion-tab-bar>
+                        </ion-tabs>
+                    </ion-toolbar>
+        </ion-footer>
+        
+        

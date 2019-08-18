@@ -1,0 +1,63 @@
+<ion-content class="bg-image">
+  <ion-grid>           
+    <ion-row>
+        <ion-col> 
+            <div class="ion-text-center">
+              <img src="../../../assets/img/logo-login.png"/>
+            </div>
+           <div class="ion-margin-top"> 
+              <ion-item class="no-background underline" lines="none" no-padding no-inner-padding-end>
+                <div class="ion-padding-end" style="padding-top: 4px;">
+                    <ion-icon name="person" class="icon color"></ion-icon> 
+                </div>
+                <ion-input type="text" id="input-reason" color="light" class="ion-padding-top" placeholder="Username" no-border></ion-input>
+               
+               </ion-item>
+              <ion-item class="no-background underline ion-padding-top" lines="none" no-padding>
+                  <div class="ion-padding-end" style="padding-top: 4px;">
+                    <ion-icon name="lock" class="icon color"></ion-icon>
+                  </div>
+                  <ion-input type="password" id="input-amount" color="light" class="ion-padding-top" placeholder="Password" no-border></ion-input>
+              </ion-item>
+              <ion-item class="no-background" lines="none" no-padding no-margin no-inner-padding-end slot="end">
+                <ion-label left-margin padding-start  class="ion-text-right">
+                    <a routerLink="/forgetpass" class="forget-pass">
+                      Forgot Password?
+                 </a>
+                </ion-label>
+              </ion-item>
+          </div>   
+           
+        <div padding-top> 
+          <a routerLink="/dashboard">
+              <ion-button slot="start"  expand="block" class="Signin-btn color"><ion-icon slot="start" class="color" name="log-in"> </ion-icon> SIGN IN</ion-button>
+          </a> 
+          
+        </div>
+        <div class="ion-text-center">
+          <ion-text color="light"><p><span>OR</span></p></ion-text>
+        </div>
+        <div>
+            <ion-grid no-padding padding-bottom>
+              <ion-row no-padding> 
+                  <ion-col size-xs="6" size-xl="6" size-sm="6" size-md="6" size-lg="6" no-padding>
+                      <ion-button  expand="block" class="fb-btn" no-padding><ion-icon slot="start" name="logo-facebook"></ion-icon>Facebook</ion-button>
+                   
+                    </ion-col>
+                      <ion-col size-xs="6" size-xl="6" size-sm="6" size-md="6" size-lg="6"  no-padding>
+                          
+                            <ion-button expand="block" class="tw-btn" no-padding><ion-icon slot="start" name="logo-twitter"></ion-icon>Twitter</ion-button>
+                     
+                    </ion-col>
+              </ion-row>
+            </ion-grid>
+          </div>
+          <div class="ion-text-center login-signup">
+             <a routerLink="/register" class="signup-color">
+                   New here? Sign Up
+             </a>
+          </div>
+    </ion-col>
+    </ion-row> 
+</ion-grid>
+</ion-content>

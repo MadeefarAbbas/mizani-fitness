@@ -1,0 +1,63 @@
+
+.card {
+    border-radius: none;
+    background-color: #fff;
+    border-radius: 0px;
+ }
+ 
+ .card-header {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 6px;
+    padding-bottom: 7px;
+    position: relative;
+ }
+ .top-color { color: #fff; }
+.top-bg-color {
+    --background: rgb(25,89,116);
+ }
+ .card-content {
+    padding: 5px;
+ }
+ 
+ .duration {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 5px;
+    color: #fff;
+    padding: 3px 5px 3px 5px;
+    background-color: rgba(65,56,55,0.3);
+    border: 1px solid #CDC0B4;
+ }
+
+ .ion-pdd {padding-right: 5px;} 
+ 
+ .h2-color {color: #E65E24;padding-right: 5px;}
+ .p-color {color: #888888;margin-right: 3px;}
+ .p-color-size {color: #888888;margin-right: 7px; display: block; font-size: 12px;}
+ .card-underline {border-top: #ECEEEF;}
+ .item-pos {position: relative; }
+ .para-pos {position: absolute; right: 15px; bottom: 0px; margin-bottom: 0px; margin-right: 0px;}
+ .free-pad {padding-right: 0px;  }
+ .btn-book {--background: #36B565;--background-activated: #36B565;} 
+ .ion-p {padding-top: 10px;}
+ .margin-top {margin-top: 5px;}
+
+ .content-bg-color {
+    --background: #EDEEF0;
+}
+
+.btn-bg-color {
+    --background: #E65E24;
+    --background-activated:   #E65E24;
+    --border-radius: none;
+}
+
+.card-cancel {
+    position: absolute;
+    top: 7px;
+    right: 8px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}

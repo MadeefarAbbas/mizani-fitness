@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar color="dark">
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="auth" color="success"></ion-back-button>
+      </ion-buttons>
+      <ion-item slot="end" class="no-background" lines="none">
+            <img src="../../../assets/img/login-logo.fw.png" width="60" height="50" />
+      </ion-item>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding-top class="bg-image">
+  <form #f="ngForm" (ngSubmit) = "onSubmit(f)" padding-top>
+      <ion-grid padding-top>
+          <ion-row padding-top class="ion-padding-vertical">
+            <ion-col padding-top class="ion-padding-vertical">
+              <div padding-top class="ion-padding-vertical">
+                  <ion-item padding-top class="no-background underline" lines="none" no-padding>
+                      <ion-icon name="person" color="light" class="icon"></ion-icon> 
+                      <ion-input type="text" ngModel name="ucc" color="light" class="ion-padding-top ion-padding-left" placeholder="Enter UCC (unique customer code)" required></ion-input>
+                  </ion-item>
+              </div>
+              <div> 
+                  <ion-button href="http://localhost:8100/register" class="next-btn" expand="block">Next <ion-icon name="arrow-dropright" slot="end"></ion-icon></ion-button>
+              </div>
+              <div class="ion-text-center ion-padding-bottom"> 
+                    <ion-text color="light"><p><span>OR</span></p></ion-text>
+              </div>
+              <div class="ion-text-center ucc-signin">
+                    <a href="http://localhost:8100/auth" class="signin-color">
+                          Go back and sign in
+                    </a>
+                 </div>
+              </ion-col>
+            </ion-row>
+        </ion-grid>
+  </form>
+</ion-content>

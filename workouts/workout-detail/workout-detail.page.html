@@ -1,0 +1,119 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button (click)="onCancel()" color="medium">
+        <ion-icon name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Workout Detail</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+<ion-header mode="ios">
+  <ion-toolbar color="primary" class="top-color">
+<ion-buttons slot="start">
+  <ion-back-button defaultHref="/workouts" color="light"></ion-back-button>
+  </ion-buttons>
+  <ion-title>Booking Detail</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content no-padding-top>
+  <ion-list class="content-bg-color" no-padding>
+    <ion-card class="card" no-margin >
+        <ion-card-header class="card-header" no-padding>
+                             
+          <img src="../../assets/img/madison.jpg" alt="Card img"/>
+               
+        </ion-card-header> 
+        <ion-card-content class="card-content">
+          <ion-item no-padding no-margin class="item-pos" >
+              <h2 class="ion-float-left"  color="dark"><strong>This is the title of promotion</strong></h2>
+              
+          </ion-item> 
+         
+          <ion-item lines="none" no-padding>
+            <p no-margin class="ion-padding-bottom ion-padding-top p-color-size ion-p">
+              
+                The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+          
+            </p>
+        </ion-item>
+        
+              
+        </ion-card-content>
+    </ion-card>
+    
+</ion-list>
+<ion-grid padding-top>
+                <div class="border-top border-bottom">
+                        <ion-row class="row">
+                                <ion-col size="12">
+                                        <h4 text-center><ion-text color="primary">Services</ion-text></h4>
+                                </ion-col>
+                        </ion-row>
+                        <ion-row class="row">
+                        <ion-col size="4">
+                                <ion-card class="card">
+                                        <ion-card-content no-padding>
+                                                        <img class="img" src="../../assets/img/uniform1.jpg" alt="Card img"/>
+                                                       
+                                                                
+                                                        
+                                        </ion-card-content>
+                                        <ion-checkbox mode="ios" class="checkbox" color="light" checked></ion-checkbox>
+                                
+                                </ion-card>
+                                <p text-center><ion-text color="primary">Alteration Service</ion-text></p>
+                        </ion-col>     
+                        <ion-col size="4">
+                                        <ion-card class="card">
+                                                <ion-card-content no-padding>
+                                                                <img class="img" src="../../assets/img/uniform2.jpg" alt="Card img"/>
+                                                                <ion-checkbox checked mode="ios" class="checkbox" color="light"></ion-checkbox>
+                                                </ion-card-content>
+                                        </ion-card>
+                                        <p text-center><ion-text color="primary">Shoe & Bag Repair</ion-text></p>
+                        </ion-col>
+                        <ion-col size="4">
+                                        <ion-card class="card">
+                                                <ion-card-content no-padding>
+                                                                <img class="img" src="../../assets/img/uniform1.jpg" alt="Card img"/>
+                                                                <ion-checkbox checked mode="ios" class="checkbox" color="light"></ion-checkbox>
+                                                </ion-card-content>
+                                        </ion-card>
+                                        <p text-center><ion-text color="primary">House Staff Uniform</ion-text></p>
+                        </ion-col>          
+                        </ion-row>
+                </div>
+                <ion-row class="border-top border-bottom row" margin-top padding-bottom>
+                    <ion-col size="12">
+                            <h4 text-center><ion-text color="primary">No of Items</ion-text></h4>                              
+                    </ion-col>
+                    <ion-col size="12">
+                            <p text-center>
+                                    <ion-badge class="badge">
+                                                    16
+                                    </ion-badge>
+                            </p>
+                            
+                            <!-- Default Progressbar with 50 percent -->
+                            <ion-progress-bar value="0.5">
+                                    
+                            </ion-progress-bar>
+                    </ion-col>
+            </ion-row>
+                
+                <ion-row class="border-top border-bottom row" margin-top padding-bottom>
+                    <ion-col size="12">
+                        <h4 text-center><ion-text color="primary">Date & Time</ion-text></h4>                              
+                </ion-col>      
+                  <ion-col size="12">
+                            <ion-text color="primary"><h4 class="mb" text-center><strong>{{ myDate }}</strong></h4></ion-text>
+                        </ion-col>     
+                        <ion-col size="6" offset="3">
+                            <div class="available-time" text-center>
+                                10:00 PM
+                            </div>
+                        </ion-col>  
+                        </ion-row>
+</ion-grid>
+ </ion-content>

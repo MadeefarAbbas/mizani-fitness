@@ -1,0 +1,143 @@
+
+ ion-card {
+   --border-radius: 15px; 
+   outline: 0px;
+   margin: 5px 0px 5px 0px;
+   }
+
+.p-color {
+   color: var(--ion-color-dark);
+   overflow: inherit; 
+   font-size: 12px;
+   line-height: normal;
+}
+
+ion-item {
+   --inner-padding-end: 0px !important;
+}
+ #cart-badge {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-radius: 5px;
+ }
+
+ .bg {
+   box-shadow: none !important;
+   border-radius: none;
+ }
+
+ .border-radius {
+    --border-radius: 55px;
+ }
+
+ .label-video {
+    padding-left: 10px;
+ }
+
+ .underline {
+   border-bottom: #999999 solid 1px;
+ }
+
+ .top-bg-color {
+   --background: rgb(25,89,116);
+}
+
+.tbar-color {
+   --color: #F9FBFB;
+}
+
+.p-style {
+   font-family: 'Roboto';
+   font-size: 10px !important;
+}
+
+.content-bg-color {
+   --background: #ffffff;
+}
+
+.card {
+   border-radius: none;
+   background-color: #fff;
+   margin: 5px 5px 10px 5px;
+   border-radius: 0px;
+}
+
+.header-color {
+   color: #fff;
+}
+.card-header {
+   padding-left: 5px;
+   padding-right: 5px;
+   padding-top: 6px;
+   padding-bottom: 7px;
+   position: relative;
+}
+
+.card-content {
+   padding: 5px;
+}
+
+.category {
+   position: absolute;
+   bottom: 20px;
+   left: 20px;
+   border-radius: 25px;
+   border: 1px solid #fff;
+   color: #fff;
+   padding: 2px 7px 1px 7px;
+   background-color: rgb(173,164,160);
+}
+
+.success {
+  
+   background-color: green;
+   font-size: 12px;
+}
+.danger {
+   font-size: 12px;
+   background-color: red;
+}
+.primary {
+   font-size: 12px;
+   background-color: blue;
+}
+.duration-danger {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   border-radius: 25px;
+   color: #fff;
+   padding: 3px 10px 3px 10px;
+   
+   background-color: red;
+} 
+.duration-success {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   border-radius: 25px;
+   color: #fff;
+   padding: 3px 10px 3px 10px;
+   
+   background-color: green;
+}
+.duration-primary {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   border-radius: 25px;
+   color: #fff;
+   padding: 3px 10px 3px 10px;
+   
+   background-color: blue;
+}
+.category-para {
+   padding-right: 6px;
+   font-size: 12px !important; 
+}
+
+.icon-padding {
+   padding-right: 7px;
+   font-size: 20px;
+}

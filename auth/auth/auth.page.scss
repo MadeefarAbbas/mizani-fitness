@@ -1,0 +1,107 @@
+ .bg-image {
+    --background:none;
+    background-image: linear-gradient(rgba(64,134,163,.9), rgba(64,134,163,.85)),url('../../../assets/img/image.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.no-background {
+    --background:none;
+}
+
+.Signin-btn{
+    --color:rgb(25,89,116);
+    --color-activated: rgb(25,89,116);
+    --background: #fff;
+    --background-activated:   #fff;
+    --border-radius: none;
+}
+
+.signup-color {color: #fff}
+
+.fb-btn{
+    --background: #395599;
+    --background-activated:  #395599;
+    --border-radius: none;
+}
+
+.tw-btn{
+    --background: #1C9DEB;
+    --background-activated:  #1C9DEB;
+    --border-radius: none;
+}
+
+.login-signup {
+    text-decoration-line: underline;
+    color: #fff;
+}
+a {
+    color: rgb(25,89,116);
+}
+
+.line-color {
+    color: rgba(22,23,24,.9);
+}
+.icon {
+    font-size: 25px;
+ }
+
+ .color {color:rgb(25,89,116);}
+
+ 
+
+ p {
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  p:before,
+  p:after {
+    background-color: rgba(25,89,116,.9);
+    content: "";
+    display: inline-block;
+    height: 0px;
+    position: relative;
+    vertical-align: middle;
+    width: 43.5%;
+    border-bottom:#b4cfdb solid 1px;
+  }
+  
+  p {
+      margin: 0px;
+      padding-top: 35px;
+      padding-bottom: 33px;
+  }
+
+  p:before {
+    right: 0.5em;
+    margin-left: -50%;
+  }
+  
+  p:after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
+
+  .color {
+    color: #90b7c9;
+  }
+  .underline {
+    border-bottom: #90b7c9 solid 1px;
+  }
+
+  .forget-pass {
+    color: #fff;
+    text-decoration: none;
+    text-align: right;
+  }
+
+  ion-label.ion-text-right {
+    margin: 0px;
+  }
+
+  a {
+    text-decoration: none;
+}

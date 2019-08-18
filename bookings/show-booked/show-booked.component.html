@@ -1,0 +1,83 @@
+<ion-header ios="ios">
+    <ion-toolbar color="primary" class="top-color">
+  <ion-buttons slot="start">
+    <ion-back-button defaultHref="/workouts" (click)="onCancel()" color="light"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Booking Detail</ion-title>
+    </ion-toolbar> 
+  </ion-header>
+  <ion-content no-padding>
+      <ion-grid padding-top>
+              <div class="border-top border-bottom">
+                      <ion-row class="row">
+                              <ion-col size="12">
+                                      <h4 text-center><ion-text color="primary">Services</ion-text></h4>
+                              </ion-col>
+                      </ion-row>
+                      <ion-row class="row">
+                      <ion-col size="4">
+                              <ion-card class="card">
+                                      <ion-card-content no-padding>
+                                                      <img class="img" src="../../assets/img/uniform1.jpg" alt="Card img"/>
+                                                     
+                                                              
+                                                      
+                                      </ion-card-content>
+                                      <ion-checkbox mode="ios" class="checkbox" color="light" checked></ion-checkbox>
+                              
+                              </ion-card>
+                              <p text-center><ion-text color="primary">Alteration Service</ion-text></p>
+                      </ion-col>     
+                      <ion-col size="4">
+                                      <ion-card class="card">
+                                              <ion-card-content no-padding>
+                                                              <img class="img" src="../../assets/img/uniform2.jpg" alt="Card img"/>
+                                                              <ion-checkbox checked mode="ios" class="checkbox" color="light"></ion-checkbox>
+                                              </ion-card-content>
+                                      </ion-card>
+                                      <p text-center><ion-text color="primary">Shoe & Bag Repair</ion-text></p>
+                      </ion-col>
+                      <ion-col size="4">
+                                      <ion-card class="card">
+                                              <ion-card-content no-padding>
+                                                              <img class="img" src="../../assets/img/uniform1.jpg" alt="Card img"/>
+                                                              <ion-checkbox checked mode="ios" class="checkbox" color="light"></ion-checkbox>
+                                              </ion-card-content>
+                                      </ion-card>
+                                      <p text-center><ion-text color="primary">House Staff Uniform</ion-text></p>
+                      </ion-col>          
+                      </ion-row>
+              </div>
+              <ion-row class="border-top border-bottom row" margin-top padding-bottom>
+                  <ion-col size="12">
+                          <h4 text-center><ion-text color="primary">No of Items</ion-text></h4>                              
+                  </ion-col>
+                  <ion-col size="12">
+                          <p text-center>
+                                  <ion-badge class="badge">
+                                                  16
+                                  </ion-badge>
+                          </p>
+                          
+                          <!-- Default Progressbar with 50 percent -->
+                          <ion-progress-bar value="0.5">
+                                  
+                          </ion-progress-bar>
+                  </ion-col>
+          </ion-row>
+              
+              <ion-row class="border-top border-bottom row" margin-top padding-bottom>
+                  <ion-col size="12">
+                      <h4 text-center><ion-text color="primary">Date & Time</ion-text></h4>                              
+              </ion-col>      
+                <ion-col size="12">
+                          <ion-text color="primary"><h4 class="mb" text-center><strong>{{ myDate }}</strong></h4></ion-text>
+                      </ion-col>     
+                      <ion-col size="6" offset="3">
+                          <div class="available-time" text-center>
+                              10:00 PM
+                          </div>
+                      </ion-col>  
+                      </ion-row>
+      </ion-grid>
+</ion-content>

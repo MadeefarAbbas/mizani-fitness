@@ -1,0 +1,47 @@
+
+.menu-logo {
+  padding: 0px;
+  text-align: center;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px; 
+}
+
+.logo-padding {
+    padding-left: 70px;
+}
+
+.grid {
+    --ion-grid-padding: 30px; 
+    --ion-grid-padding-md: 50px;
+    --ion-grid-padding-lg: 50px;
+    --ion-grid-padding-sm: 50px;
+    --ion-grid-padding-lg: 50px;
+    --ion-grid-padding-xl: 50px;
+  }
+  
+  ion-col {
+    --ion-grid-column-padding: 5px;
+    --background: #fff;
+  }
+  
+  
+  .button-native {
+    padding-top: 25px !important;
+    padding-bottom: 25px !important;
+  }
+
+  .card {
+    --background: #fff;
+    border-radius: 35px;
+  }
+  .card-content {
+    padding-left: 22px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .btn-logout {
+      --background: #fff;
+      --background-activated: #fff;
+  }

@@ -1,0 +1,44 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button (click)="onCancel()" color="medium">
+        <ion-icon name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Workout Detail</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+<ion-header>
+  <ion-toolbar class="top-bg-color top-color">
+<ion-buttons slot="start">
+  <ion-back-button defaultHref="/schedules" (click)="onCancel()" color="light"></ion-back-button>
+  </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="content-bg-color" no-padding-top>
+  <ion-list class="content-bg-color" no-padding>
+    <ion-card class="card" no-margin>
+        <ion-card-header class="card-header">
+                             
+          <img src="../../assets/img/madison.jpg" alt="Card img"/>
+               
+        </ion-card-header>
+        <ion-card-content class="card-content">
+          <ion-item no-padding no-margin class="item-pos">
+              <h2 class="ion-float-left"  color="dark"><strong>This is the title of promotion</strong></h2>
+              
+          </ion-item> 
+         
+          <ion-item lines="none">
+            <p no-margin class="ion-padding-bottom ion-padding-top p-color-size ion-p">
+              
+                The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+          
+            </p>
+        </ion-item>
+        </ion-card-content>
+    </ion-card>
+    
+          
+</ion-list>
+ </ion-content>

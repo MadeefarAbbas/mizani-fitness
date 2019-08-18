@@ -1,0 +1,22 @@
+ .grid {
+  --ion-grid-padding: 5px;
+ }
+
+ .card {
+    border-radius: 8px;
+    margin: 0px;
+ }
+ 
+ .content-bg-color {
+    --background: #fff !important;
+ }
+
+.top-color {
+   color: #fff;
+}
+
+.p-style {
+  font-family: 'Roboto';
+  color: var(--ion-color-dark);
+ font-size: 12px !important;
+}

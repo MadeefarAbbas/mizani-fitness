@@ -1,0 +1,79 @@
+.bg-image {
+    --background:none;
+    background-image: linear-gradient(rgba(22,23,24,.9), rgba(22,23,24,.85)),url('../../assets/img/App.PNG');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.no-scroll {
+    --overflow: hidden;
+}
+
+.no-background {
+    --background:none;
+}
+
+.next-btn{
+    --background: #BE4F07;
+    --background-activated:   #BE4F07;
+    --border-radius: none;
+}
+
+.ucc-signin {
+    text-decoration-line: underline;
+    color: #BE4F07;
+    margin-bottom: 10px;
+}
+.signin-color {
+    --color: #BE4F07;
+}
+
+.img-radius {
+    --border-radius: "none";
+}
+
+.underline {
+    border-bottom: #999999 solid 1px;
+  }
+
+  .icon {
+    font-size: 25px;
+ }
+
+ p {
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  p:before,
+  p:after {
+    background-color: rgba(22,23,24,.9);
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 43.5%;
+    border-bottom: 1px solid #999999;
+  }
+  
+  p {
+      margin: 0px;
+      padding-top: 65px;
+      padding-bottom: 3px;
+  }
+
+  p:before {
+    right: 0.5em;
+    margin-left: -50%;
+  }
+  
+  p:after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
+
+  a {
+    color: #BE4F07;
+  }

@@ -1,0 +1,42 @@
+
+ ion-card {
+    --border-radius: 15px; 
+    outline: 0px;
+    margin: 5px 0px 5px 0px;
+     }
+  
+  .p-color {
+     color: var(--ion-color-dark);
+     overflow: inherit; 
+     font-size: 12px;
+     line-height: normal;
+  }
+  
+  ion-item {
+     --inner-padding-end: 0px !important;
+  }
+ .top-color {
+     color: #fff;
+ }
+
+ .pd-t {
+     padding-top: 5px;
+     padding-right: 5px; 
+ }
+
+ .btn-position {
+    position: relative;
+ }
+
+ .badge-style {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 10px;
+    --padding-top: 4px;
+    border-radius: 50%;
+}
+
+ion-card-content {
+   padding: 5px;
+}

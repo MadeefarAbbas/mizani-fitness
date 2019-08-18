@@ -1,0 +1,83 @@
+<ion-app>
+    <ion-menu side="start" mode="md">
+        <ion-content>
+            
+          <ion-list>
+              
+              <ion-menu-toggle>
+                <div class="menu-logo ion-margin-top ion-padding-top ion-padding-bottom ion-padding-verticle">
+                    <img src="../../assets/img/tailormade-logo.png">
+                </div>
+              </ion-menu-toggle> 
+              
+              <ion-menu-toggle>
+                <ion-item  routerLink="/dashboard" class="ion-padding-end" lines="none" detail="false">
+                  <ion-icon name="home" slot="start" size="large" color="primary"></ion-icon>
+                  <ion-label color="primary">Home</ion-label>
+                </ion-item>
+            </ion-menu-toggle>
+            
+            <ion-menu-toggle>
+                <ion-item  routerLink="/profile" class="ion-padding-end" lines="none" detail="false">
+                  <ion-icon name="person" slot="start" size="large" color="primary"></ion-icon>
+                  <ion-label color="primary">Profile</ion-label>
+                </ion-item>
+            </ion-menu-toggle>
+            <ion-menu-toggle>
+                <ion-item  routerLink="/services" class="ion-padding-end" lines="none" detail="false">
+                  <ion-icon name="apps" slot="start" size="large" color="primary"></ion-icon>
+                  <ion-label color="primary">Services</ion-label>
+                </ion-item>
+            </ion-menu-toggle>
+            <ion-menu-toggle>
+                <ion-item routerLink="/workouts" class="ion-padding-end" lines="none" detail="false">
+                  <ion-icon name="call" size="large" slot="start" color="primary"></ion-icon>
+                  <ion-label color="primary">Bookings</ion-label>
+                </ion-item>
+              </ion-menu-toggle>
+            <ion-menu-toggle>
+              <ion-item  routerLink="/schedules" class="ion-padding-end" lines="none" detail="false">
+                <ion-icon name="person-add" size="large" slot="start" color="primary"></ion-icon>
+                <ion-label color="primary">Promotions</ion-label>
+              </ion-item>
+            </ion-menu-toggle>
+            <ion-menu-toggle>
+                <ion-item  routerLink="/notifications" class="ion-padding-end" lines="none" detail="false">
+                  <ion-icon name="notifications" slot="start" size="large" color="primary"></ion-icon>
+                  <ion-label color="primary">Notifications</ion-label>
+                </ion-item>
+              </ion-menu-toggle>
+              <ion-menu-toggle>
+                  <ion-item  routerLink="/settings" class="ion-padding-end " lines="none" detail="false">
+                    <ion-icon name="settings" slot="start" size="large" color="primary"></ion-icon>
+                    <ion-label color="primary">Settings</ion-label>
+                  </ion-item>
+                </ion-menu-toggle>
+                <ion-menu-toggle>
+                  <ion-item  routerLink="/contact" class="ion-padding-end " lines="none" detail="false">
+                    <ion-icon name="call" slot="start" size="large" color="primary"></ion-icon>
+                    <ion-label color="primary">Contact</ion-label>
+                  </ion-item>
+                </ion-menu-toggle>
+
+                <ion-grid class="grid">
+                  <ion-row align-items-center>
+                    <ion-col align-self-center offset="1" size="8">
+                        <ion-button 
+                        color="primary"
+                        shape="round"
+                        expand="block"
+                        mode="md"
+                        >
+                            <ion-icon color="light" size="large" name="log-out" mode="ios"> </ion-icon>Log Out
+                        </ion-button>
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
+                
+                 
+          </ion-list>
+        </ion-content>
+    </ion-menu>
+    <ion-router-outlet main></ion-router-outlet>
+</ion-app>

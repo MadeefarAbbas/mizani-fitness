@@ -1,0 +1,223 @@
+<ion-header mode="ios">
+    <ion-toolbar color="primary" class="top-color">
+  <ion-buttons slot="start">
+    <ion-back-button defaultHref="/workouts" (click)="onCancel()" color="light"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Booking Detail</ion-title>
+    </ion-toolbar>
+  </ion-header>
+<ion-content no-padding>
+        <ion-grid padding-top>
+                <div class="border-top border-bottom">
+                        <ion-row class="row">
+                                <ion-col size="12">
+                                        <h4 text-center><ion-text color="primary">Select Services</ion-text></h4>
+                                </ion-col>
+                        </ion-row>
+                        <ion-row class="row">
+                        <ion-col size="4">
+                                <ion-card class="card">
+                                        <ion-card-content no-padding>
+                                                        <img class="img" src="../../assets/img/uniform1.jpg" alt="Card img"/>
+                                                       
+                                                                
+                                                        
+                                        </ion-card-content>
+                                        <ion-checkbox mode="ios" class="checkbox" color="light"></ion-checkbox>
+                                
+                                </ion-card>
+                                <p text-center><ion-text color="primary">Alteration Service</ion-text></p>
+                        </ion-col>     
+                        <ion-col size="4">
+                                        <ion-card class="card">
+                                                <ion-card-content no-padding>
+                                                                <img class="img" src="../../assets/img/uniform2.jpg" alt="Card img"/>
+                                                                <ion-checkbox mode="ios" class="checkbox" color="light"></ion-checkbox>
+                                                </ion-card-content>
+                                        </ion-card>
+                                        <p text-center><ion-text color="primary">Shoe & Bag Repair</ion-text></p>
+                        </ion-col>
+                        <ion-col size="4">
+                                        <ion-card class="card">
+                                                <ion-card-content no-padding>
+                                                                <img class="img" src="../../assets/img/uniform1.jpg" alt="Card img"/>
+                                                                <ion-checkbox mode="ios" class="checkbox" color="light"></ion-checkbox>
+                                                </ion-card-content>
+                                        </ion-card>
+                                        <p text-center><ion-text color="primary">House Staff Uniform</ion-text></p>
+                        </ion-col>          
+                        </ion-row>
+                </div>
+                <ion-row class="border-top border-bottom row" margin-top padding-bottom>
+                        <ion-col size="12">
+                                <h4 text-center><ion-text color="primary">Select No of Items</ion-text></h4>                              
+                        </ion-col>
+                        <ion-col size="12">
+                                <ion-item lines="none">
+                                        <ion-range (ionChange)="totalRange($event)" mode="ios" value="16" min="1" max="100" pin="true">
+                                                
+                                        </ion-range>
+                                </ion-item>
+                        </ion-col>
+                </ion-row>
+                
+                <ion-row class="border-top border-bottom row" margin-top padding-bottom>
+                        <ion-col size="12">
+                        <mbsc-form mode="ios">
+                                <mbsc-form-group>
+                                        <mbsc-calendar [(ngModel)]="calendarOneWeek"  (onSet)="withDefaultEvent($event)" display="inline" weeks="1">
+                                        </mbsc-calendar>
+                                        <ion-text color="primary"><h4 class="mb" text-center><strong>{{ myDate }}</strong></h4></ion-text>
+                                </mbsc-form-group>
+                        </mbsc-form>
+                        </ion-col>       
+                        </ion-row>
+                        <ion-row class="border-top border-bottom" margin-top padding-bottom>
+                        <ion-col size="12">
+                                <h4 text-center><ion-text color="primary">Available Time</ion-text></h4>                              
+                        </ion-col>
+                        <ion-col size="3" margin-top padding-bottom>
+                                <ion-button
+                                expand="block"
+                                shape="round"
+                                (click) = "availableTimeSelect1()"
+                                [ngClass]="{'activated' : buttonActive, 'after-available': buttonNotActive1}"
+                                class="after-available"
+                                >
+                                        9:00 AM
+                                </ion-button>
+                        </ion-col>
+                        <ion-col size="3" margin-top>
+                                <ion-button
+                                expand="block"
+                                shape="round"
+                                (click) = "notAvailableTimeSelect()"
+                                class="available-time"
+                                >
+                                        2:00 AM
+                                </ion-button>
+                        </ion-col>
+                        <ion-col size="3" margin-top>
+                                <ion-button
+                                expand="block"
+                                shape="round"
+                                (click) = "availableTimeSelect2()"
+                                [ngClass]="{'activated' : buttonActive, 'after-available': buttonNotActive2}"
+                                class="available-time"
+                                >
+                                        5:00 PM
+                                </ion-button>
+                        </ion-col>
+                        <ion-col size="3" margin-top>
+                                <ion-button
+                                expand="block"
+                                shape="round"
+                                (click) = "notAvailableTimeSelect()"
+                                class="available-time"
+                                >
+                                        10:00 PM
+                                </ion-button>
+                        </ion-col>
+
+
+                        <ion-col size="3" margin-top>
+                                <ion-button
+                                expand="block"
+                                shape="round"
+                                (click) = "notAvailableTimeSelect()"
+                                class="available-time"
+                                >
+                                        9:00 AM
+                                </ion-button>
+                        </ion-col>
+                        <ion-col size="3" margin-top>
+                                <ion-button
+                                expand="block"
+                                shape="round"
+                                (click) = "notAvailableTimeSelect()"
+                                class="available-time"
+                                >
+                                        2:00 AM
+                                </ion-button>
+                        </ion-col>
+                        <ion-col size="3" margin-top>
+                                <ion-button
+                                expand="block"
+                                shape="round"
+                                (click) = "notAvailableTimeSelect()"
+                                class="available-time"
+                                >
+                                        11:00 AM
+                                </ion-button>
+                        </ion-col>
+                        <ion-col size="3" margin-top>
+                                <ion-button
+                                expand="block"
+                                shape="round"
+                                (click) = "availableTimeSelect3()"
+                                [ngClass]="{'activated' : buttonActive, 'after-available': buttonNotActive3}"
+                                class="available-time"
+                                >
+                                        10:00 PM
+                                </ion-button>
+                        </ion-col>
+
+
+                        <ion-col size="3" margin-top>
+                                <ion-button
+                                expand="block"
+                                shape="round"
+                                (click) = "notAvailableTimeSelect()"
+                                class="available-time"
+                                >
+                                        10:00 AM
+                                </ion-button>
+                        </ion-col>
+                        <ion-col size="3" margin-top>
+                                <ion-button
+                                expand="block"
+                                shape="round"
+                                (click) = "notAvailableTimeSelect()"
+                                class="available-time"
+                                >
+                                        3:00 AM
+                                </ion-button>
+                        </ion-col>
+                        <ion-col size="3" margin-top>
+                                <ion-button
+                                expand="block"
+                                shape="round"
+                                (click) = "notAvailableTimeSelect()"
+                                class="available-time"
+                                >
+                                        5:00 PM
+                                </ion-button>
+                        </ion-col>
+                        <ion-col size="3" margin-top>
+                                <ion-button
+                                expand="block"
+                                shape="round"
+                                class="available-time"
+                                (click) = "notAvailableTimeSelect()"
+                                >
+                                        10:00 PM
+                                </ion-button>
+                        </ion-col>
+                </ion-row>
+                <ion-row margin-top>
+                        <ion-col size="6" offset="3">
+                                <ion-button
+                                ionFocus
+                                expand="full"
+                                shape="round"
+                                color="primary"
+                                mode="md"
+                                
+                                (click) = "presentAlertConfirm()"
+                                >
+                                Book Now!
+                                </ion-button>
+                        </ion-col>
+                </ion-row>
+        </ion-grid>
+</ion-content>
